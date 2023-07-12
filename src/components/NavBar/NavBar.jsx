@@ -1,4 +1,6 @@
 import "./NavBar.scss";
+import { Link } from "react-router-dom";
+
 // import logo from "../../images/letter-k.svg";
 import { AiFillDribbbleCircle } from "react-icons/ai";
 import { LiaCocktailSolid } from "react-icons/lia";
@@ -8,7 +10,6 @@ const Navbar = () => {
     <nav className="navbar">
       <ul>
         <li>
-          {/* <img src={logo} alt="logo" className="icon" /> */}
           <svg
             className="icon"
             width="30px"
