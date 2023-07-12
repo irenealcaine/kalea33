@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #00b5b8;
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+
+    li {
+      color: #0a2022;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .icon {
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  span {
+    display: none;
+  }
+}
