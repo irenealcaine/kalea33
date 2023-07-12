@@ -1,9 +1,8 @@
 import "./NavBar.scss";
 import { Link } from "react-router-dom";
-
-// import logo from "../../images/letter-k.svg";
-import { AiFillDribbbleCircle } from "react-icons/ai";
 import { LiaCocktailSolid } from "react-icons/lia";
+import { TbMapSearch } from "react-icons/tb";
+import { FiCamera } from "react-icons/fi";
 
 const Navbar = () => {
   return (
@@ -11,9 +10,9 @@ const Navbar = () => {
       <ul>
         <li>
           <svg
-            className="icon"
-            width="30px"
-            height="30px"
+            className="logo"
+            width="40px"
+            height="40px"
             viewBox="0 0 64 64"
             role="img"
           >
@@ -26,11 +25,11 @@ const Navbar = () => {
           <span>Página 1</span>
         </li>
         <li>
-          <AiFillDribbbleCircle className="icon" />
+          <FiCamera className="icon" />
           <span>Página 2</span>
         </li>
         <li>
-          <AiFillDribbbleCircle className="icon" />
+          <TbMapSearch className="icon" />
           <span>Página 3</span>
         </li>
       </ul>
