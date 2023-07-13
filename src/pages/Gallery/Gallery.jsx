@@ -1,3 +1,6 @@
+import React, { useEffect, useState } from "react";
+import { CSSTransition } from "react-transition-group";
+import { useInView } from "react-intersection-observer";
 import "./Gallery.scss";
 
 const photos = [
@@ -57,13 +60,8 @@ const Gallery = () => {
       <h1>Galería</h1>
       <div className="boxes">
         {photos.map((photo) => (
-          <div key={photo.id} className="box">
-            <img
-              src={photo.url}
-              alt={photo.title}
-              // onClick={() => openModal(photo.url)}
-              className=""
-            />
+          <div className="box">
+            <img src={photo.url} alt={photo.title} className="" />
           </div>
         ))}
       </div>
