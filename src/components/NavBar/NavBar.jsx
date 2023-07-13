@@ -23,8 +23,10 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <LiaCocktailSolid className="icon" />
-          <span>Página 1</span>
+          <Link to="/especialidades">
+            <LiaCocktailSolid className="icon" />
+            <span>Página 1</span>
+          </Link>
         </li>
         <li>
           <Link to="/galeria">
@@ -33,8 +35,10 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <TbMapSearch className="icon" />
-          <span>Página 3</span>
+          <Link to="/contacto">
+            <TbMapSearch className="icon" />
+            <span>Página 3</span>
+          </Link>
         </li>
       </ul>
     </nav>
