@@ -23,11 +23,12 @@
       }
 
       a {
-        color: #0a2022;
+        color: #01535a;
         text-decoration: none;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 5px;
+        transition: all 0.3s ease-in-out;
 
         // &:hover {
         //   color: #dbfeff;
@@ -36,15 +37,16 @@
 
       .logo {
         fill: #01535a;
-
-        &:hover {
-          fill: #dbfeff;
-        }
+        transition: all 0.3s ease-in-out;
+        // &:hover {
+        //  fill: #dbfeff;
+        //}
       }
 
       .icon {
         font-size: 25px;
         color: #01535a;
+        transition: all 0.3s ease-in-out;
         // &:hover {
         //   color: #dbfeff;
         // }

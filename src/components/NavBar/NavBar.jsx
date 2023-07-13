@@ -11,7 +11,7 @@ const Navbar = () => {
         <li>
           <Link to="/">
             <svg
-              className="icon"
+              className="logo"
               width="30px"
               height="30px"
               viewBox="0 0 64 64"
