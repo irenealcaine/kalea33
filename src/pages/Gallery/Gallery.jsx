@@ -1,6 +1,3 @@
-import React, { useEffect, useState } from "react";
-import { CSSTransition } from "react-transition-group";
-import { useInView } from "react-intersection-observer";
 import "./Gallery.scss";
 
 const photos = [
