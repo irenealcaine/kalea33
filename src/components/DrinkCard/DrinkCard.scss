@@ -1,0 +1,50 @@
+.drink-card {
+  background-color: #00b5b855;
+  background-image: linear-gradient(to top, #007274 0%, #007274bb 74%),
+    url("https://static7.depositphotos.com/1276324/754/v/450/depositphotos_7549499-stock-illustration-neon-tropical-drinks.jpg");
+  background-size: 200px;
+  background-repeat: repeat;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #007274bb;
+  width: 40%;
+
+  &__image {
+    width: calc(100% + 60px);
+    margin: -30px;
+    margin-bottom: 10px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 5px;
+  }
+
+  &__ingredients {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__instructions {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 680px) {
+  .drink-card {
+    width: 100%;
+
+    &__image {
+      height: 200px;
+    }
+  }
+}

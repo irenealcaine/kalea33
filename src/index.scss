@@ -17,12 +17,21 @@ body {
 
   h2,
   h3,
-  h4,
-  li {
+  h4 {
     font-family: "Kalam", cursive;
     color: #dbfeff;
   }
-  p {
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p,
+  li {
     font-family: "Nunito Sans", sans-serif;
     color: #dbfeff;
   }

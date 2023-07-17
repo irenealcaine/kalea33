@@ -1,4 +1,6 @@
 import "./Gallery.scss";
+import React, { useEffect, useState } from "react";
+import Modal from "../../components/Modal/Modal";
 
 const photos = [
   {
@@ -52,13 +54,43 @@ const photos = [
 ];
 
 const Gallery = () => {
+  const [selectedPhoto, setSelectedPhoto] = useState(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup function
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <div className="gallery">
+      {selectedPhoto && (
+        <Modal photo={selectedPhoto} onClose={() => setSelectedPhoto(null)} />
+      )}
       <h1>Galería</h1>
       <div className="boxes">
         {photos.map((photo) => (
-          <div className="box">
-            <img src={photo.url} alt={photo.title} className="" />
+          <div className="box hidden" key={photo.id}>
+            <img
+              src={photo.url}
+              alt={photo.title}
+              className=""
+              onClick={() => setSelectedPhoto(photo)}
+            />
           </div>
         ))}
       </div>
