@@ -84,14 +84,16 @@ const Best = () => {
   return (
     <div className="best">
       <h1>Especialidades</h1>
-      {drinks.map((drink, key) => (
-        <DrinkCard
-          name={drink.name}
-          image={drink.image}
-          ingredients={drink.ingredients}
-          instructions={drink.instructions}
-        />
-      ))}
+      <div className="container">
+        {drinks.map((drink, key) => (
+          <DrinkCard
+            name={drink.name}
+            image={drink.image}
+            ingredients={drink.ingredients}
+            instructions={drink.instructions}
+          />
+        ))}
+      </div>
     </div>
   );
 };
