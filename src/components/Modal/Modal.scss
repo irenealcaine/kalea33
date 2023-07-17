@@ -1,10 +1,10 @@
 .modal {
   width: 100vw;
-  height: 100vh;
+  height: 101vh;
   background-color: #000a;
   z-index: 40;
   position: fixed;
-  margin-top: -40px;
+  margin-top: -42px;
 
   .modal-content {
     position: absolute;
@@ -20,6 +20,10 @@
       max-height: 90%;
       border-radius: 15px;
       border: 2px solid aquamarine;
+    }
+
+    button {
+      margin: 10px;
     }
   }
 }
