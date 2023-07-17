@@ -83,7 +83,7 @@ const Best = () => {
 
   return (
     <div className="best">
-      <h1>Especialidades</h1>
+      <h1>Bebidas</h1>
       <div className="container">
         {drinks.map((drink, key) => (
           <DrinkCard
