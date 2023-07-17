@@ -6,7 +6,6 @@ const Modal = ({ photo, onClose }) => {
     <div className="modal">
       <div className="modal-content">
         <img src={photo.url} alt={photo.title} />
-        {/* <button onClick={onClose}>Cerrar</button> */}
         <Button color={"blue"} value={"Cerrar"} onClick={onClose} />
       </div>
     </div>
