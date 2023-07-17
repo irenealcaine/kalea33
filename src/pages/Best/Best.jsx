@@ -17,7 +17,7 @@ const Best = () => {
     {
       name: "Piña Colada",
       image:
-        "https://www.recetasderechupete.com/wp-content/uploads/2020/06/Pina-colada.jpg",
+        "https://coctelia.com/wp-content/uploads/2018/05/pina-colada-coctel-2.jpg",
       ingredients: ["Ron blanco", "Piña", "Crema de coco", "Hielo"],
       instructions: [
         "Coloca todos los ingredientes en una licuadora.",
@@ -28,7 +28,7 @@ const Best = () => {
     {
       name: "Mojito",
       image:
-        "https://www.recetasderechupete.com/wp-content/uploads/2020/06/Mojito.jpg",
+        "https://cocina-casera.com/wp-content/uploads/2017/07/como-hacer-mojito-casero.jpg",
       ingredients: [
         "Ron blanco",
         "Menta fresca",
@@ -47,7 +47,7 @@ const Best = () => {
     {
       name: "Caipirinha",
       image:
-        "https://www.recetasderechupete.com/wp-content/uploads/2020/06/Caipirinha.jpg",
+        "https://www.comedera.com/wp-content/uploads/2022/04/caipirina.png",
       ingredients: ["Cachaça", "Limón", "Azúcar", "Hielo"],
       instructions: [
         "Corta el limón en trozos y colócalos en un vaso.",
@@ -59,7 +59,7 @@ const Best = () => {
     {
       name: "Daiquiri",
       image:
-        "https://www.recetasderechupete.com/wp-content/uploads/2020/06/Daiquiri.jpg",
+        "https://www.tucocteleria.com/wp-content/uploads/2018/04/Daiquiri.jpg",
       ingredients: ["Ron blanco", "Jugo de limón", "Azúcar", "Hielo"],
       instructions: [
         "En una coctelera, mezcla todos los ingredientes con hielo.",
@@ -70,7 +70,7 @@ const Best = () => {
     {
       name: "Negroni",
       image:
-        "https://www.recetasderechupete.com/wp-content/uploads/2020/06/Negroni.jpg",
+        "https://recetasdecocina.elmundo.es/wp-content/uploads/2022/05/coctel-negroni-italiano.jpg",
       ingredients: ["Ginebra", "Campari", "Vermú rojo", "Hielo"],
       instructions: [
         "En un vaso mezclador, agrega hielo, ginebra, Campari y vermú rojo.",
