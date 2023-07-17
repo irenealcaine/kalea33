@@ -1,4 +1,5 @@
 import "./Gallery.scss";
+import React, { useEffect } from "react";
 
 const photos = [
   {
@@ -52,12 +53,32 @@ const photos = [
 ];
 
 const Gallery = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup function
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <div className="gallery">
       <h1>Galería</h1>
       <div className="boxes">
         {photos.map((photo) => (
-          <div className="box">
+          <div className="box hidden">
             <img src={photo.url} alt={photo.title} className="" />
           </div>
         ))}
