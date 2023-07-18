@@ -25,19 +25,19 @@ const Navbar = () => {
         <li>
           <Link to="/bebidas">
             <LiaCocktailSolid className="icon" />
-            <span>Página 1</span>
+            <span>Bebidas</span>
           </Link>
         </li>
         <li>
           <Link to="/galeria">
             <FiCamera className="icon" />
-            <span>Página 2</span>
+            <span>Galería</span>
           </Link>
         </li>
         <li>
           <Link to="/contacto">
             <TbMapSearch className="icon" />
-            <span>Página 3</span>
+            <span>Contacto</span>
           </Link>
         </li>
       </ul>
