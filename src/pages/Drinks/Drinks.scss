@@ -1,4 +1,4 @@
-.best {
+.drinks {
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 680px) {
-  .best {
+  .drinks {
     .container {
       width: 90%;
     }

@@ -1,7 +1,7 @@
-import "./Best.scss";
+import "./Drinks.scss";
 import DrinkCard from "../../components/DrinkCard/DrinkCard";
 
-const Best = () => {
+const Drinks = () => {
   const drinks = [
     {
       name: "Margarita",
@@ -82,7 +82,7 @@ const Best = () => {
   ];
 
   return (
-    <div className="best">
+    <div className="drinks">
       <h1>Bebidas</h1>
       <div className="container">
         {drinks.map((drink, key) => (
@@ -98,4 +98,4 @@ const Best = () => {
   );
 };
 
-export default Best;
+export default Drinks;
