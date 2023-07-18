@@ -23,7 +23,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/especialidades">
+          <Link to="/bebidas">
             <LiaCocktailSolid className="icon" />
             <span>Página 1</span>
           </Link>
